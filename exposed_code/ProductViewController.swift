@@ -20,6 +20,17 @@ class ProductViewController: UIViewController, UITableViewDelegate, UITableViewD
         return cell
     }
     
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        performSegue(withIdentifier: "detalle_segue", sender: self)	
+    }
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if let destination = segue.destination as?
+        EspecificProductViewController{
+            destination.products = products[(listPorducts.indexPathForSelectedRow?.row)!]
+        }
+    }
+    
     @IBOutlet weak var nombreCategoria: UILabel!
     @IBOutlet weak var listPorducts: UITableView!
     
@@ -38,6 +49,8 @@ class ProductViewController: UIViewController, UITableViewDelegate, UITableViewD
         downloadProducts {
             self.listPorducts.reloadData()
         }
+        
+        nombreCategoria.text = category?.nombre
         
         
     }

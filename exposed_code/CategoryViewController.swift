@@ -86,8 +86,17 @@ class CategoryViewController: UIViewController, UITableViewDelegate, UITableView
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = UITableViewCell(style: .default, reuseIdentifier: nil)
         cell.textLabel?.text = categories[indexPath.row].nombre.capitalized
+        
+        //let image : UIImage = UIImage(named: "osx_design_view_messages") ?? <#default value#>
+        
+        
+        
+        //cell.imageView?.image = image
+        
         return cell
     }
+    
+    
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         performSegue(withIdentifier: "product_segue", sender: self)

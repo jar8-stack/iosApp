@@ -5,6 +5,11 @@ class ViewController: UIViewController {
     
     @IBOutlet weak var email: UITextField!
     @IBOutlet weak var password: UITextField!
+    
+    var device = [Device]()
+    var usuario = [Usuario]()
+    
+    
     var emailText: String { // not optional, you give a "" default value if nil
         return email.text ?? ""
     }
@@ -19,6 +24,10 @@ class ViewController: UIViewController {
     }
     
     
+    
+  
+    
+    
     @IBAction func login(_ sender: Any) {
         let request = AF.request("http://localhost:3000/Usuario/\(emailText)")
         
@@ -28,45 +37,23 @@ class ViewController: UIViewController {
             if(users.password == self.passText){
                 print("Se ha logueado correctamente")
                 
-                // Guardar sesiòn activa
-                
-                var json1 = SesionActiva(usuario: Usuario(email: self.emailText))
-                
-                let path = Bundle.main.path(forResource: "sesionActiva", ofType: "json")
-                let url = URL(fileURLWithPath: path!)
-                
-                URLSession.shared.dataTask(with: url){
-                    (data, response, error) in
-                    do {
-                        if let data = data{
-                            var json = try JSONDecoder().decode(SesionActiva.self, from: data)
-                            DispatchQueue.main.async {
-                                json.usuario.email = json1.usuario.email
-                                
-                                
-                                print()
-                            }
-                        }else{
-                            print("No data")
-                        }
-                    }catch{
-                        print(error)
-                    }
-                }.resume()
-                
-                // Guardar sesiòn activa
-                
                 let menuController = self.storyboard?.instantiateViewController(identifier: "menu_vc") as! MenuViewController
                 self.present(menuController, animated: true)
+                
+                
             }else{
                 print("Ocurrio un error en el inicio de sesiòn")
             }
         }
     }
+    @IBOutlet weak var imageLogo: UIImageView!
     override func viewDidLoad() {
         super.viewDidLoad()
+        imageLogo.load(urlString: "https://vangogh.teespring.com/v3/image/moo9Hb8qMIJBwnY4-YuYDzUQdr8/960/1120.jpg")
         
     }
+    
+    
     
  
 struct Response: Codable{
@@ -87,11 +74,13 @@ struct User: Codable{
     let codigo_postal: String
 }
     
-    struct SesionActiva: Codable{
-        var usuario: Usuario
+    struct Device: Codable{
+        var id_device: Int
+        var device_id: String
     }
     
     struct Usuario: Codable{
+        var id_usuario: Int
         var email: String
     }
     

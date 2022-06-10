@@ -8,12 +8,15 @@
 
 /* Begin PBXBuildFile section */
 		CF06A8AC28458EB500515EF1 /* DesignView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF06A8AB28458EB500515EF1 /* DesignView.swift */; };
+		CF2BEA562852BFC600892207 /* PerfilViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF2BEA552852BFC600892207 /* PerfilViewController.swift */; };
 		CF360EA22851FAB000CEE9B0 /* categoryStats.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF360EA12851FAB000CEE9B0 /* categoryStats.swift */; };
 		CF360EA4285205BE00CEE9B0 /* ProductViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF360EA3285205BE00CEE9B0 /* ProductViewController.swift */; };
 		CF360EA62852081900CEE9B0 /* productStats.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF360EA52852081900CEE9B0 /* productStats.swift */; };
 		CF360EA828521C5C00CEE9B0 /* RegistroViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF360EA728521C5C00CEE9B0 /* RegistroViewController.swift */; };
 		CF360EAA2852338100CEE9B0 /* MenuViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF360EA92852338100CEE9B0 /* MenuViewController.swift */; };
-		CF360EAC2852368000CEE9B0 /* sesionActiva.json in Resources */ = {isa = PBXBuildFile; fileRef = CF360EAB2852368000CEE9B0 /* sesionActiva.json */; };
+		CF360EAE28528C9D00CEE9B0 /* EspecificProductViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF360EAD28528C9D00CEE9B0 /* EspecificProductViewController.swift */; };
+		CF360EB028529BB100CEE9B0 /* ListaPedidosViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF360EAF28529BB100CEE9B0 /* ListaPedidosViewController.swift */; };
+		CF3D073D2852E21900807C86 /* DetallePedidoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF3D073C2852E21900807C86 /* DetallePedidoViewController.swift */; };
 		CF6A76B32845257100A96C47 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF6A76B22845257100A96C47 /* AppDelegate.swift */; };
 		CF6A76B52845257100A96C47 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF6A76B42845257100A96C47 /* SceneDelegate.swift */; };
 		CF6A76B72845257100A96C47 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF6A76B62845257100A96C47 /* ViewController.swift */; };
@@ -46,12 +49,15 @@
 
 /* Begin PBXFileReference section */
 		CF06A8AB28458EB500515EF1 /* DesignView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DesignView.swift; sourceTree = "<group>"; };
+		CF2BEA552852BFC600892207 /* PerfilViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PerfilViewController.swift; sourceTree = "<group>"; };
 		CF360EA12851FAB000CEE9B0 /* categoryStats.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = categoryStats.swift; sourceTree = "<group>"; };
 		CF360EA3285205BE00CEE9B0 /* ProductViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductViewController.swift; sourceTree = "<group>"; };
 		CF360EA52852081900CEE9B0 /* productStats.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = productStats.swift; sourceTree = "<group>"; };
 		CF360EA728521C5C00CEE9B0 /* RegistroViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegistroViewController.swift; sourceTree = "<group>"; };
 		CF360EA92852338100CEE9B0 /* MenuViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuViewController.swift; sourceTree = "<group>"; };
-		CF360EAB2852368000CEE9B0 /* sesionActiva.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; name = sesionActiva.json; path = ../../sesionActiva.json; sourceTree = "<group>"; };
+		CF360EAD28528C9D00CEE9B0 /* EspecificProductViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EspecificProductViewController.swift; sourceTree = "<group>"; };
+		CF360EAF28529BB100CEE9B0 /* ListaPedidosViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListaPedidosViewController.swift; sourceTree = "<group>"; };
+		CF3D073C2852E21900807C86 /* DetallePedidoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetallePedidoViewController.swift; sourceTree = "<group>"; };
 		CF6A76AF2845257100A96C47 /* exposed_code.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = exposed_code.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CF6A76B22845257100A96C47 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		CF6A76B42845257100A96C47 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -117,7 +123,6 @@
 		CF6A76B12845257100A96C47 /* exposed_code */ = {
 			isa = PBXGroup;
 			children = (
-				CF360EAB2852368000CEE9B0 /* sesionActiva.json */,
 				CF6A76B22845257100A96C47 /* AppDelegate.swift */,
 				CF6A76B42845257100A96C47 /* SceneDelegate.swift */,
 				CF6A76B62845257100A96C47 /* ViewController.swift */,
@@ -132,6 +137,10 @@
 				CF360EA52852081900CEE9B0 /* productStats.swift */,
 				CF360EA728521C5C00CEE9B0 /* RegistroViewController.swift */,
 				CF360EA92852338100CEE9B0 /* MenuViewController.swift */,
+				CF360EAD28528C9D00CEE9B0 /* EspecificProductViewController.swift */,
+				CF360EAF28529BB100CEE9B0 /* ListaPedidosViewController.swift */,
+				CF2BEA552852BFC600892207 /* PerfilViewController.swift */,
+				CF3D073C2852E21900807C86 /* DetallePedidoViewController.swift */,
 			);
 			path = exposed_code;
 			sourceTree = "<group>";
@@ -265,7 +274,6 @@
 			files = (
 				CF6A76BF2845257500A96C47 /* LaunchScreen.storyboard in Resources */,
 				CF6A76BC2845257500A96C47 /* Assets.xcassets in Resources */,
-				CF360EAC2852368000CEE9B0 /* sesionActiva.json in Resources */,
 				CF6A76BA2845257100A96C47 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -293,12 +301,16 @@
 			files = (
 				CFA00D162851B342003399FE /* CategoryViewController.swift in Sources */,
 				CF360EAA2852338100CEE9B0 /* MenuViewController.swift in Sources */,
+				CF360EAE28528C9D00CEE9B0 /* EspecificProductViewController.swift in Sources */,
 				CF360EA22851FAB000CEE9B0 /* categoryStats.swift in Sources */,
+				CF2BEA562852BFC600892207 /* PerfilViewController.swift in Sources */,
 				CF6A76B72845257100A96C47 /* ViewController.swift in Sources */,
 				CF360EA4285205BE00CEE9B0 /* ProductViewController.swift in Sources */,
+				CF360EB028529BB100CEE9B0 /* ListaPedidosViewController.swift in Sources */,
 				CF06A8AC28458EB500515EF1 /* DesignView.swift in Sources */,
 				CF360EA62852081900CEE9B0 /* productStats.swift in Sources */,
 				CF6A76B32845257100A96C47 /* AppDelegate.swift in Sources */,
+				CF3D073D2852E21900807C86 /* DetallePedidoViewController.swift in Sources */,
 				CF360EA828521C5C00CEE9B0 /* RegistroViewController.swift in Sources */,
 				CF6A76B52845257100A96C47 /* SceneDelegate.swift in Sources */,
 			);

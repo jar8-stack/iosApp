@@ -12,7 +12,7 @@ struct categoryStats: Codable{
     let id_categoria: Int
     let nombre: String
     let descripcion: String
-    let url_foto: String
+    let url_image: String
 }
 
 
